@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10100f">
+<title>NOIR & BLOOM — Photography • Films • Stories</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#10100f;--panel:#191917;--cream:#f1eee7;--gold:#c9a879;--muted:#aaa69e;--line:#ffffff22}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--bg);color:#fff;font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}button,input,select,textarea{font:inherit}.wrap{width:min(1180px,86%);margin:auto}.eyebrow{font-size:10px;letter-spacing:.27em;text-transform:uppercase;color:var(--gold)}.serif{font-family:"Playfair Display",serif;font-weight:500}.section{padding:105px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:45px}.section-head h2{font:500 clamp(38px,5vw,64px)/1.05 "Playfair Display",serif;letter-spacing:-.035em;margin:12px 0 0}.section-head p{max-width:390px;color:var(--muted);font-size:13px;line-height:1.85;margin:0}.gold{color:var(--gold)}
+/* header + hero */
+header{position:absolute;z-index:20;top:0;left:0;width:100%;padding:23px 7%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff25}.brand{font-weight:700;letter-spacing:.2em;font-size:15px}.brand span{color:var(--gold)}nav{display:flex;align-items:center;gap:27px}nav a{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#eee;transition:.2s}nav a:hover{color:var(--gold)}.nav-book{border:1px solid #c9a879;padding:12px 16px;color:var(--gold)}.menu{display:none;color:#fff;background:none;border:0;font-size:25px}
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;background:linear-gradient(90deg,#090909d9 0%,#0909098a 47%,#09090912 100%),linear-gradient(0deg,#0909099c,transparent 55%),url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2200&q=90") center 42%/cover}.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 75% 45%,transparent 0%,#0002 70%);pointer-events:none}.hero-inner{position:relative;z-index:1;width:min(1180px,86%);margin:95px auto 0}.hero-kicker{display:flex;align-items:center;gap:13px;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#e2cba8}.hero-kicker:before{content:"";width:36px;height:1px;background:var(--gold)}.hero h1{font:500 clamp(58px,9.5vw,125px)/.92 "Playfair Display",serif;letter-spacing:-.055em;margin:25px 0}.hero h1 em{color:#e0c49d}.hero-copy{max-width:440px;color:#e1ded8;font-size:14px;line-height:1.9}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;align-items:center;gap:18px;padding:15px 21px;background:var(--gold);color:#171512;font-size:9px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;border:1px solid var(--gold);transition:.25s}.btn:hover{background:transparent;color:var(--gold)}.btn.outline{background:transparent;color:#fff;border-color:#ffffff80}.btn.outline:hover{background:#fff;color:#111}.hero-foot{position:absolute;z-index:2;bottom:32px;left:7%;right:7%;display:flex;justify-content:space-between;color:#ffffffa8;font-size:9px;letter-spacing:.2em;text-transform:uppercase}
+/* intro strip */
+.intro-strip{background:var(--gold);color:#171512;padding:19px 7%;display:flex;justify-content:center;gap:35px;flex-wrap:wrap;font-size:9px;letter-spacing:.2em;text-transform:uppercase}.intro-strip span:before{content:"✦";margin-right:12px}
+/* services */
+.services{background:var(--cream);color:#171614}.services .section-head p{color:#77736c}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #c9c2b6;border-left:1px solid #c9c2b6}.service-card{padding:27px 23px 30px;border-right:1px solid #c9c2b6;border-bottom:1px solid #c9c2b6;min-height:225px;transition:.25s}.service-card:hover{background:#e5dfd3}.service-icon{font-size:25px;color:#a9895e}.service-card small{display:block;color:#9b896f;font-size:9px;letter-spacing:.18em;margin:22px 0 10px}.service-card h3{font:500 23px "Playfair Display",serif;margin:0 0 10px}.service-card p{font-size:11px;line-height:1.8;color:#77736c;margin:0}
+/* portfolio */
+.portfolio{background:#111}.gallery{display:grid;grid-template-columns:1.1fr .9fr .9fr;grid-template-rows:270px 270px;gap:14px}.shot{position:relative;overflow:hidden;background:#282522}.shot:first-child{grid-row:span 2}.shot img{transition:transform .8s;filter:saturate(.82)}.shot:hover img{transform:scale(1.06)}.shot:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#000b)}.shot-label{position:absolute;z-index:1;left:22px;bottom:20px}.shot-label small{color:#e1c49b;font-size:8px;letter-spacing:.2em;text-transform:uppercase}.shot-label h3{font:500 25px "Playfair Display",serif;margin:6px 0 0}.center-link{text-align:center;margin-top:35px}
+/* video */
+.films{background:#1a1917}.film-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.film-card{position:relative;min-height:300px;overflow:hidden;background:#282522}.film-card img{position:absolute;inset:0;transition:.7s;filter:brightness(.72)}.film-card:hover img{transform:scale(1.05);filter:brightness(.55)}.play{position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%);width:58px;height:58px;border:1px solid #ffffffb8;border-radius:50%;display:grid;place-items:center;font-size:17px;padding-left:3px;background:#0004}.film-info{position:absolute;z-index:2;left:22px;bottom:20px}.film-info small{font-size:8px;letter-spacing:.2em;color:#e2c49c;text-transform:uppercase}.film-info h3{font:500 24px "Playfair Display",serif;margin:7px 0}.film-note{font-size:10px;color:#aaa69e;margin-top:18px;line-height:1.7}
+/* team */
+.team{background:var(--cream);color:#171614}.team .section-head p{color:#77736c}.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.member-photo{height:360px;overflow:hidden;background:#ddd}.member-photo img{filter:saturate(.8);transition:.6s}.team-card:hover img{transform:scale(1.04)}.member-meta{padding:17px 0}.member-meta small{font-size:8px;letter-spacing:.2em;color:#9a825e;text-transform:uppercase}.member-meta h3{font:500 25px "Playfair Display",serif;margin:6px 0}.member-meta p{font-size:11px;color:#77736c;margin:0}
+/* gear */
+.gear{background:#111}.gear-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:8%;align-items:center}.gear-photo{height:550px;position:relative}.gear-photo img{filter:saturate(.7)}.gear-photo:after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid #c9a87980;pointer-events:none}.gear-copy h2{font:500 clamp(40px,5vw,62px)/1.08 "Playfair Display",serif;margin:14px 0 18px}.gear-copy>p{font-size:13px;line-height:1.9;color:var(--muted)}.gear-list{margin-top:28px;border-top:1px solid var(--line)}.gear-row{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);font-size:12px}.gear-row span:first-child{color:#fff}.gear-row span:last-child{color:#aaa69e;text-align:right}
+/* reviews */
+.reviews{background:#eae5dc;color:#171614}.reviews .section-head p{color:#77736c}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.review{background:#f7f4ee;padding:29px 26px;min-height:245px;border:1px solid #ded7ca}.stars{letter-spacing:.15em;color:#b18c5e;font-size:12px}.review blockquote{font:italic 19px/1.55 "Playfair Display",serif;margin:20px 0}.reviewer{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#77736c}
+/* booking */
+.booking{position:relative;background:linear-gradient(90deg,#10100ff0,#10100fbd),url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=2000&q=85") center/cover;padding:115px 0}.booking-inner{display:grid;grid-template-columns:1fr .9fr;gap:9%;align-items:center}.booking h2{font:500 clamp(43px,6vw,75px)/1.04 "Playfair Display",serif;margin:15px 0 20px}.booking-copy p{max-width:430px;color:#c0bcb4;font-size:13px;line-height:1.9}.booking-form{background:#f1eee7;color:#171614;padding:30px}.booking-form h3{font:500 27px "Playfair Display",serif;margin:0 0 20px}.field{margin-bottom:13px}.field label{display:block;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#77736c;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #d3ccbf;background:#faf8f3;color:#171614;font-size:12px;outline:none}.field textarea{resize:vertical;min-height:75px}.field input:focus,.field select:focus,.field textarea:focus{border-color:#a9895e}.booking-form .btn{width:100%;justify-content:center;cursor:pointer}
+/* footer */
+footer{padding:30px 7%;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;border-top:1px solid var(--line);font-size:9px;letter-spacing:.13em;color:#89857e}.socials{display:flex;gap:20px}.socials a:hover{color:var(--gold)}
+/* reveal + modal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}.modal{position:fixed;inset:0;background:#000e;z-index:99;display:none;align-items:center;justify-content:center;padding:25px}.modal.open{display:flex}.modal-box{width:min(900px,100%);position:relative}.modal-box iframe{width:100%;aspect-ratio:16/9;border:0}.modal-close{position:absolute;right:0;bottom:calc(100% + 10px);background:none;border:0;color:white;font-size:28px;cursor:pointer}
+@media(max-width:900px){nav{gap:14px}nav a{font-size:8px}.service-grid{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:300px 230px 230px}.shot:first-child{grid-row:span 2}.film-grid{grid-template-columns:1fr 1fr}.gear-layout{gap:5%}.gear-photo{height:450px}}
+@media(max-width:650px){header{padding:20px 7%}.menu{display:block}nav{display:none;position:absolute;top:66px;left:0;width:100%;padding:25px 7%;background:#111;align-items:flex-start;flex-direction:column}nav.open{display:flex}nav a{font-size:10px}.nav-book{display:inline-block}.hero{min-height:90vh;background-position:60% center}.hero-inner{margin-top:75px}.hero h1{font-size:clamp(58px,16vw,88px)}.hero-foot{font-size:8px}.section{padding:78px 0}.section-head{display:block}.section-head p{margin-top:18px}.service-grid{grid-template-columns:1fr 1fr}.service-card{padding:20px 15px;min-height:220px}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:350px 220px 220px}.shot:first-child{grid-column:span 2;grid-row:auto}.shot-label h3{font-size:21px}.film-grid{grid-template-columns:1fr}.film-card{min-height:320px}.team-grid{grid-template-columns:1fr 1fr}.member-photo{height:260px}.gear-layout,.booking-inner{grid-template-columns:1fr;gap:50px}.gear-photo{height:380px;margin-right:16px}.gear-copy h2{font-size:48px}.review-grid{grid-template-columns:1fr}.review{min-height:auto}.booking{padding:80px 0}.booking-form{padding:22px}footer{padding:25px 7%}}
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="#home">NOIR <span>&</span> BLOOM.</a>
+  <nav id="nav">
+    <a href="#services">Services</a><a href="#portfolio">Photography</a><a href="#films">Films</a><a href="#team">Our team</a><a href="#gear">Our gear</a><a href="#reviews">Reviews</a><a class="nav-book" href="#booking">Book your event ↗</a>
+  </nav>
+  <button class="menu" id="menu" aria-label="Toggle navigation">☰</button>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-kicker">Photography · Cinematic films · Stories</div>
+    <h1>We don't just<br>capture <em>moments.</em><br>We make them last.</h1>
+    <p class="hero-copy">The happy tears. The loud laughter. The little glances in between. We turn your once-in-a-lifetime moments into photographs and films you'll feel all over again.</p>
+    <div class="actions"><a class="btn" href="#portfolio">Explore our work <b>↗</b></a><a class="btn outline" href="#booking">Plan your event <b>↗</b></a></div>
+  </div>
+  <div class="hero-foot"><span>Based in Mumbai · Available worldwide</span><span>Scroll to discover ↓</span></div>
+</section>
+<div class="intro-strip"><span>Honest moments</span><span>Artful storytelling</span><span>Made to last</span><span>Every frame matters</span></div>
+
+<section class="section services" id="services"><div class="wrap">
+  <div class="section-head reveal"><div><div class="eyebrow">What we do</div><h2>Every occasion has<br>a story worth telling<span class="gold">.</span></h2></div><p>From intimate family celebrations to grand wedding days and brand campaigns, our team captures the energy, emotion and details that make every event yours.</p></div>
+  <div class="service-grid">
+    <article class="service-card reveal"><div class="service-icon">♡</div><small>01 / CELEBRATIONS</small><h3>Wedding Photography</h3><p>Traditional, candid and editorial coverage of every wedding ritual and emotion.</p></article>
+    <article class="service-card reveal"><div class="service-icon">▶</div><small>02 / CINEMATIC</small><h3>Wedding Films</h3><p>Highlight films, full-length wedding films and beautifully edited memories.</p></article>
+    <article class="service-card reveal"><div class="service-icon">✧</div><small>03 / LITTLE MIRACLES</small><h3>Maternity & Baby</h3><p>Maternity portraits, newborn sessions, birthdays and baby milestone shoots.</p></article>
+    <article class="service-card reveal"><div class="service-icon">⌂</div><small>04 / FAMILY</small><h3>Family & Portraits</h3><p>Personal portraits, pre-wedding shoots, couple sessions and family stories.</p></article>
+    <article class="service-card reveal"><div class="service-icon">♬</div><small>05 / BIG DAYS</small><h3>Events & Celebrations</h3><p>Engagements, receptions, anniversaries, parties and corporate events.</p></article>
+    <article class="service-card reveal"><div class="service-icon">◉</div><small>06 / BRAND STORIES</small><h3>Commercial Shoots</h3><p>Product photography, food, fashion, brand films and promotional content.</p></article>
+    <article class="service-card reveal"><div class="service-icon">✦</div><small>07 / BEFORE THE DAY</small><h3>Pre-wedding Films</h3><p>Concept-led cinematic stories, location shoots and save-the-date films.</p></article>
+    <article class="service-card reveal"><div class="service-icon">▣</div><small>08 / ON THE MOVE</small><h3>Delivery & Newborn at Home</h3><p>Thoughtful, respectful coverage of maternity, birth and precious first moments, subject to hospital/home permissions.</p></article>
+  </div>
+</div></section>
+
+<section class="section portfolio" id="portfolio"><div class="wrap">
+  <div class="section-head reveal"><div><div class="eyebrow">The photographs</div><h2>Frames full of feeling<span class="gold">.</span></h2></div><p>A curated look at the beautiful people, places and stories we've had the privilege to photograph. Replace these sample images with the studio's own work.</p></div>
+  <div class="gallery">
+    <article class="shot reveal"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85" alt="Wedding couple"><div class="shot-label"><small>Wedding story</small><h3>The start of forever</h3></div></article>
+    <article class="shot reveal"><img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=900&q=85" alt="Wedding portrait"><div class="shot-label"><small>Couple portraits</small><h3>Just the two of us</h3></div></article>
+    <article class="shot reveal"><img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=900&q=85" alt="Portrait session"><div class="shot-label"><small>Portraits</small><h3>Unscripted</h3></div></article>
+    <article class="shot reveal"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=85" alt="Wedding table details"><div class="shot-label"><small>Details</small><h3>Little things, big love</h3></div></article>
+    <article class="shot reveal"><img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=900&q=85" alt="Celebration"><div class="shot-label"><small>Celebrations</small><h3>All heart, all joy</h3></div></article>
+  </div>
+  <div class="center-link"><a class="btn outline" href="https://instagram.com/" target="_blank" rel="noopener">See more on Instagram ↗</a></div>
+</div></section>
+
+<section class="section films" id="films"><div class="wrap">
+  <div class="section-head reveal"><div><div class="eyebrow">The moving pictures</div><h2>Stories in motion<span class="gold">.</span></h2></div><p>Relive the sound, movement and emotion. Add your own YouTube or Vimeo film links to these video showcases.</p></div>
+  <div class="film-grid">
+    <a class="film-card reveal video-link" href="https://www.youtube.com/results?search_query=cinematic+indian+wedding+film" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=85" alt="Wedding film preview"><span class="play">▶</span><div class="film-info"><small>Wedding highlight</small><h3>A day to remember</h3></div></a>
+    <a class="film-card reveal video-link" href="https://www.youtube.com/results?search_query=pre+wedding+cinematic+film" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1000&q=85" alt="Pre wedding film preview"><span class="play">▶</span><div class="film-info"><small>Pre-wedding film</small><h3>Before the forever</h3></div></a>
+    <a class="film-card reveal video-link" href="https://www.youtube.com/results?search_query=cinematic+event+film" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1507504031003-b417219a0?auto=format&fit=crop&w=1000&q=85" alt="Event film preview"><span class="play">▶</span><div class="film-info"><small>Event film</small><h3>Moments that move</h3></div></a>
+  </div>
+  <p class="film-note">Video preview cards currently link to sample searches. Replace each link with the client's published film URL or embed their own Vimeo/YouTube video.</p>
+</div></section>
+
+<section class="section team" id="team"><div class="wrap">
+  <div class="section-head reveal"><div><div class="eyebrow">The people behind the frames</div><h2>A team with an eye<br>for the in-between<span class="gold">.</span></h2></div><p>Good work comes from good people. Meet the creative minds who plan, capture and craft every story with care.</p></div>
+  <div class="team-grid">
+    <article class="team-card reveal"><div class="member-photo"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=85" alt="Photographer portrait"></div><div class="member-meta"><small>Founder · Lead Photographer</small><h3>Your Name Here</h3><p>Visual direction · Candid photography</p></div></article>
+    <article class="team-card reveal"><div class="member-photo"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=85" alt="Creative team member portrait"></div><div class="member-meta"><small>Creative Director · Filmmaker</small><h3>Team Member</h3><p>Cinematography · Storytelling</p></div></article>
+    <article class="team-card reveal"><div class="member-photo"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=85" alt="Editor portrait"></div><div class="member-meta"><small>Editor · Post-production</small><h3>Team Member</h3><p>Film editing · Colour grading</p></div></article>
+  </div>
+</div></section>
+
+<section class="section gear" id="gear"><div class="wrap gear-layout">
+  <div class="gear-photo reveal"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1100&q=85" alt="Professional camera equipment"></div>
+  <div class="gear-copy reveal"><div class="eyebrow">Tools behind the craft</div><h2>Our gear.<br><em class="gold">Our point of view.</em></h2><p>Reliable equipment helps us stay ready for every light, angle and unexpected moment. We use professional-grade tools and back-up essentials to keep your memories safe.</p>
+    <div class="gear-list">
+      <div class="gear-row"><span>Cameras</span><span>Canon / Sony / Nikon — add exact models</span></div>
+      <div class="gear-row"><span>Lenses</span><span>Prime · Portrait · Wide-angle · Telephoto</span></div>
+      <div class="gear-row"><span>Stabilisation</span><span>Gimbal · Tripod · Monopod</span></div>
+      <div class="gear-row"><span>Lighting</span><span>LED lights · Flash · Softboxes</span></div>
+      <div class="gear-row"><span>Audio</span><span>Wireless mics · Audio recorder</span></div>
+      <div class="gear-row"><span>Accessories</span><span>Drone* · Batteries · Memory cards · Backup storage</span></div>
+    </div>
+    <p class="film-note">*Drone operation is subject to local rules, permissions and venue restrictions. Equipment list is a sample—update it to match the team's actual kit.</p>
+  </div>
+</div></section>
+
+<section class="section reviews" id="reviews"><div class="wrap">
+  <div class="section-head reveal"><div><div class="eyebrow">Kind words</div><h2>Love notes from our clients<span class="gold">.</span></h2></div><p>The best part of our work is hearing how the photographs and films make people feel, long after the celebration is over.</p></div>
+  <div class="review-grid">
+    <article class="review reveal"><div class="stars">★★★★★</div><blockquote>“They captured moments we didn't even realise were happening. Looking through our wedding album felt like living the day all over again.”</blockquote><div class="reviewer">Aarav & Riya · Wedding</div></article>
+    <article class="review reveal"><div class="stars">★★★★★</div><blockquote>“The team made us feel so comfortable. The photos are beautiful, natural and so full of personality. We absolutely love them!”</blockquote><div class="reviewer">Neha & Kunal · Couple shoot</div></article>
+    <article class="review reveal"><div class="stars">★★★★★</div><blockquote>“Professional, creative and incredibly patient. The final film brought happy tears to our entire family.”</blockquote><div class="reviewer">The Mehta Family · Celebration</div></article>
+  </div>
+  <p class="film-note" style="color:#77736c">Sample testimonial text for layout preview. Replace with genuine client reviews and obtain permission before publishing.</p>
+</div></section>
+
+<section class="booking" id="booking"><div class="wrap booking-inner">
+  <div class="booking-copy reveal"><div class="eyebrow">Let's create something unforgettable</div><h2>Your date.<br>Your story.<br><em class="gold">Our lens.</em></h2><p>Tell us a little about your event. Share your date, location and the kind of memories you want to preserve. We'll connect with you on WhatsApp to discuss availability and packages.</p><p class="gold" style="font-size:10px;letter-spacing:.17em">WEDDINGS · EVENTS · PORTRAITS · FILMS</p></div>
+  <form class="booking-form reveal" id="bookingForm"><h3>Book your event</h3>
+    <div class="field"><label for="name">Your name *</label><input id="name" name="name" placeholder="Full name" required></div>
+    <div class="field"><label for="phone">Your phone number *</label><input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" required></div>
+    <div class="field"><label for="event">Event / service *</label><select id="event" name="event" required><option value="">Select a service</option><option>Wedding photography & film</option><option>Pre-wedding shoot</option><option>Maternity / newborn / delivery shoot</option><option>Birthday / family event</option><option>Corporate / commercial shoot</option><option>Other</option></select></div>
+    <div class="field"><label for="date">Event date</label><input id="date" name="date" type="date"></div>
+    <div class="field"><label for="location">Event location</label><input id="location" name="location" placeholder="City / venue"></div>
+    <div class="field"><label for="message">Tell us more</label><textarea id="message" name="message" placeholder="Any details, ideas or special requests?"></textarea></div>
+    <button class="btn" type="submit">Send enquiry on WhatsApp <span>↗</span></button>
+    <p style="font-size:9px;color:#77736c;line-height:1.6;margin:12px 0 0">Your enquiry opens WhatsApp with a pre-filled message. No information is submitted until you press Send in WhatsApp.</p>
+  </form>
+</div></section>
+</main>
+<footer><a class="brand" href="#home">NOIR <span>&</span> BLOOM.</a><span>© 2026 · PHOTOGRAPHY & CINEMATIC FILMS</span><div class="socials"><a href="https://instagram.com/" target="_blank" rel="noopener">INSTAGRAM ↗</a><a href="#booking">WHATSAPP ↗</a><a href="#home">BACK TO TOP ↑</a></div></footer>
+<script>
+const nav=document.getElementById('nav');
+document.getElementById('menu').addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const revealObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');revealObserver.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+
+// IMPORTANT: Replace this with the studio's WhatsApp number in international format, digits only.
+const WHATSAPP_NUMBER = "919876543210";
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const data=new FormData(this);
+  const message=[
+    "Hello Noir & Bloom! I'd like to enquire about booking a shoot/event.",
+    "Name: "+(data.get('name')||""),
+    "Phone: "+(data.get('phone')||""),
+    "Service: "+(data.get('event')||""),
+    "Event date: "+(data.get('date')||"Not decided"),
+    "Location: "+(data.get('location')||"Not decided"),
+    "Details: "+(data.get('message')||"")
+  ].join("\n");
+  window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message),"_blank","noopener");
+});
+</script>
+</body>
+</html>
